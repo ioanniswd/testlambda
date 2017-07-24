@@ -15,6 +15,13 @@ var localPath = 'localLambdas/';
 var invokeFolder = process.cwd();
 // console.log('current directory: ', invokeFolder);
 
+
+/**
+ * returnNotGit - Find files and folders that are not .git
+ *
+ * @param  {string} fileName The name of the file we are checking
+ * @return {boolean}         Whether the filename is .git
+ */
 function returnNotGit(fileName) {
   return fileName.indexOf('.git') == -1;
 }
